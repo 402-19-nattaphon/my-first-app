@@ -32,6 +32,9 @@ def show_result_dialog(ans1, ans2):
 
     u_ans1 = ans1.strip().lower()
     u_ans2 = ans2.strip().lower()
+    u_ans3 = ans3.strip().lower()
+    u_ans4 = ans4.strip().lower()
+
 
     # ตรวจข้อ 1
     if u_ans1 == "apple":
@@ -46,12 +49,14 @@ def show_result_dialog(ans1, ans2):
         score += 1
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
+        
      # ตรวจข้อ 3
     if u_ans3 == "egg":
         st.success("✅ ข้อ 2: ถูกต้อง")
         score += 1
     else:
-        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')") 
+        st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
+        
      # ตรวจข้อ 4
     if u_ans4 == "football":
         st.success("✅ ข้อ 4: ถูกต้อง")
@@ -87,19 +92,19 @@ st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
-    "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. ",
+    "ข้อ 1: An `a _ _ l e🍎` a day keeps the doctor away. ",
     value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
-    "ข้อ 2: Cats love to eat `f _ s h`. ",
+    "ข้อ 2: Cats love to eat `f _ s h🐟`. ",
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: tonkla love to eat `_gg`. ",
+    "ข้อ 3: tonkla love to eat `A____do🥑`. ",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: pleng love to play `fo___all`. ",
+    "ข้อ 4: pleng love to eat `Co___ut🥥`. ",
     value=st.session_state.ans4_val,
 )
 
