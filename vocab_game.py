@@ -96,18 +96,18 @@ ans2 = st.text_input(
 )
 ans3 = st.text_input(
     "ข้อ 2: tonkla love to eat `_gg`. ",
-    value=st.session_state.ans2_val,
+    value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
     "ข้อ 2: pleng love to play `fo___all`. ",
-    value=st.session_state.ans2_val,
+    value=st.session_state.ans4_val,
 )
 
 # อัปเดตค่าล่าสุดเข้าตัวแปร
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
-st.session_state.ans1_val = ans3
-st.session_state.ans2_val = ans4
+st.session_state.ans3_val = ans3
+st.session_state.ans4_val = ans4
 
 # 4. ปุ่มส่งคำตอบ
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
