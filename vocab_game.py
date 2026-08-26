@@ -95,11 +95,11 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 2: tonkla love to eat `_gg`. ",
+    "ข้อ 3: tonkla love to eat `_gg`. ",
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 2: pleng love to play `fo___all`. ",
+    "ข้อ 4: pleng love to play `fo___all`. ",
     value=st.session_state.ans4_val,
 )
 
